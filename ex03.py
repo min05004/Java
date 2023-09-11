@@ -36,5 +36,28 @@ import keyword
 print(keyword.kwlist)
 #키워드모듈 안 키워드 리스트를 출력.
  
+studentName = "홍길동"
+student_name = "홍길동"
 
-#%용법 (출력방법 4가지)
+print('%s %s' %(studentName,student_name))
+print('{}''{}' .format(studentName,student_name))
+print(f'{student_name}{studentName}')
+ 
+
+
+# format() 메서드 이용 (출력방법 4가지)
+print('이름: {}'.format(name))
+print('국어점수: {}'.format(kor))
+print('영어점수: {}'.format(eng))
+print('수학점수: {}'.format(math))
+print('{} {} {} {}'.format(name, kor, eng, math)) # 홍길동 100 90 80
+print()
+
+# f-string 용법으로 출력한다.
+# 형식 : print(f'{변수명}')
+print(f'이름: {name}')
+print(f'국어점수: {kor}')
+print(f'영어점수: {eng}')
+print(f'수학점수: {math}')
+print(f'{name} {kor} {eng} {math}') # 홍길동 100 90 80
+
